@@ -29,7 +29,7 @@ echo
 echo 'Running memory'
 for i in $running_host
 do
-  current_memory=`virsh dominfo $i | grep 'Max memory' | awk '{print $3}'`
+  current_memory=`virsh dominfo $i | grep 'Used memory' | awk '{print $3}'`
   echo "$i : ${current_memory}"
   ((running_memory=$running_memory + $current_memory))
 done
