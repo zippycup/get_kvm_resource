@@ -1,4 +1,4 @@
-# puppet-pre-commit-script
+# Get kvm resource
 
 ## Description
 
